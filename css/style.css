@@ -1,0 +1,381 @@
+
+.container-fluid {margin :0; padding:0;}
+
+.specrow {
+    opacity:0;
+    transition : all 1s ease-out;
+}
+
+.specrow.fade-in {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+    text-align : center;
+    margin:0;
+    padding:0;
+    text-align: -webkit-match-parent;
+}
+
+li {
+    position: relative;
+    margin:0;
+    padding:0;
+}
+
+h1 {
+    font-family: "Raleway";
+    text-align: center;
+    border-bottom : 3px solid white;
+}
+h2 {
+    text-align : center;
+    font-family: "roboto";
+}
+p {
+    padding-top: 5px;
+    font-family: "roboto";
+}
+
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("../img/fond.svg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+.header{
+background-color : #FFFFFF;
+top : 0;
+position : fixed;
+width: 100%;
+z-index: 10;
+margin-right : 0;
+margin-left :0;
+display: none;
+}
+
+.header-picture img {
+    width: 110px;
+    margin-left : auto;
+    margin-right : 30%;
+    display : block;
+}
+
+.header-content {
+    padding-top: 2em;
+    text-align: left;
+}
+
+.header-content li {
+    text-align : center;
+    background-color: #ffffff;
+    display: inline-block;
+    padding : 10px;
+    
+}
+
+.header-content li:hover {
+    border-bottom : 3px solid #544B66;
+    color : #544B66;
+    cursor: pointer;
+}
+
+.preview {
+    background: linear-gradient(to bottom, rgb(163, 146, 199), #544B66);
+}
+
+.toppreview {
+    padding-top : 2em;
+    padding-bottom : 1em;
+    text-align:center;
+    margin-left: 0;
+    margin-right : 0; /*force bootstrap à retirer ses marges*/
+}
+
+.toppreview-right {
+    display: flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.toppreview-right img {
+    height : 500px;
+
+}
+.logo-max img {
+    /* width : 100%; */
+    margin-left : auto;
+    margin-right : auto;
+    display : block;
+}
+
+.toppreview-right {
+    text-align: center;
+    color : #FFFFFF;
+}
+
+.toppreview-right img {
+    margin-left : auto;
+    margin-right : auto;
+    display : block;
+    max-height: 500px;
+}
+
+.titre p {
+    font-family: 'Raleway';
+    font-size : 1em;
+    color : #FCFBFC;
+}
+
+.titre h1 {
+    font-family: 'Mina';
+    font-size : 5em;
+    color: #FCFBFC;
+    font-weight: 900;
+}
+
+.toptransition h1 {
+    font-size: 3em;
+}
+.toptransition {
+    padding-left:0;
+    margin:0;
+}
+
+.bottompreview {
+    background : linear-gradient(to right, #544B66, rgb(163, 146, 199));
+    text-align:center;
+    position: fixed;
+    margin-left: 0;
+    margin-right : 0; /*force bootstrap à retirer ses marges*/
+    display: none;
+    transition: all 1s ease-out;
+}
+
+.bottompreview.fade-in {
+    top: 0;
+    width :100%;
+    z-index : 10;
+    display : flex;
+}
+
+.margin {
+    display: flex;
+    position: fixed;
+    float:left;
+}
+
+#margin {
+    float: left;
+}
+
+.addMargin {
+    display: flex;
+}
+
+.sommaire {
+    text-align: center;
+    width:100%;
+}
+
+#menu {
+    transition: all 0.3s ease-out;
+}
+.menu-hidden {
+    opacity: 0;
+}
+
+.sommaire img {
+    width: 40%;
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.sommaire a{
+    color : #FCFBFC;
+    font-size : 0.9em;
+    border : none;
+    cursor: pointer;
+    font-family: 'Raleway';
+    display: inline;
+    text-decoration: none;  
+}
+
+.menucase {
+    padding-top : 1.5%;
+    line-height: 2;
+}
+
+.sommaire a:hover {
+    border-bottom : 3px solid white;
+    cursor: pointer;
+}
+
+.contactheader,.contactheader a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.contact,.contact a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.contactinfo {
+    font-size : 0.9em;
+    padding-top: 2%;
+}
+
+.socialinfo {
+    text-align: center;
+    font-size: 1.35em;
+}
+
+.competences, .realisations, .experiences, .formations, .informations {
+    padding-top : 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left : 10em;
+    margin-right : 10em;
+    background-color: #544B66;
+    color : white;
+    align-content: center;
+    border-radius: 1em;
+}
+
+.competences, .realisations, .experiences, .formations, .informations p {
+    text-align: center;
+}
+
+.infocomp {
+    display: block;
+    text-align:center;
+    margin-left: 0;
+    margin-right : 0; /*force bootstrap à retirer ses marges*/
+    width:85%;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.infocomptech img {
+    text-align: center;
+    margin: 1em;
+    transition: all 0.2s ease-out;
+    border-radius: 15px;
+}
+.infocomptech img:hover {
+    box-shadow: 20px 20px 10px #888888;
+}
+
+.infocomplang {
+    margin-top:2.5em;
+    text-align: center;
+}
+.infocomplang img {
+    width:50%;
+}
+
+.realisationsexemple, .formationsexemple, .experiencesexemple {
+    text-align: center;
+}
+.real {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height:100%;
+}
+.real h2 {
+    color:white;
+    font-family: "roboto";
+}
+.real p {
+    font-family: "Raleway";
+    color : white;
+}
+.real img{
+    width:100%;
+}
+.realex {
+    background-color: rgba( 84, 75, 102, 0.8);
+    border: 5px solid rgba( 255, 255, 255, 1);
+    padding-top: 1%;
+}
+
+.realex > a:hover {text-decoration: none;}
+.path img {
+    width:50%;
+}
+.bottomimg img {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-bottom:15%;
+}
+.date {
+    padding-left:3%;
+    display: block;
+    position: relative;
+    float: left;
+    width: 25%;
+    padding-right: 10%;
+    font-size: 2em;
+    font-family: "Roboto";
+    text-align: center;
+}
+.event {
+    display: block;
+    position: relative;
+    float: right;
+    width: 75%;
+    margin: 0 0px 50px 25%;
+    background: white;
+    padding: 20px 25px;
+    border: 5px dashed #544B66;
+}
+.event h3 {
+    font-family: "Roboto";
+    font-size: 1.3em;
+}
+
+.event li {
+    list-style-type: square;
+    list-style-position: inside;
+    text-align : center;
+    font-family: "raleway";
+    font-size: 1em;
+}
+
+.timeline > li {
+    text-align: -webkit-match-parent;
+}
+.infoexemple {
+    text-align: center;
+}
+.infoexemple img {
+    width:50%;
+    transition : all 1.5s ease-out;
+}
+
+.infoexemple-trigger img {
+    width:20%;
+    margin: -100px;
+}
+.tabsport {
+    text-align: center;
+}
+
